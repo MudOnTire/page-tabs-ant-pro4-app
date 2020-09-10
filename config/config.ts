@@ -3,6 +3,9 @@ import { defineConfig } from 'umi';
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
 const { REACT_APP_ENV } = process.env;
+
+const RouteWatcher = '@/components/PageTab/RouteWatcher';
+
 export default defineConfig({
   hash: true,
   antd: {},
@@ -79,18 +82,21 @@ export default defineConfig({
                   icon: 'smile',
                   path: '/dashboard/analysis',
                   component: './dashboard/analysis',
+                  wrappers: [RouteWatcher],
                 },
                 {
                   name: 'monitor',
                   icon: 'smile',
                   path: '/dashboard/monitor',
                   component: './dashboard/monitor',
+                  wrappers: [RouteWatcher],
                 },
                 {
                   name: 'workplace',
                   icon: 'smile',
                   path: '/dashboard/workplace',
                   component: './dashboard/workplace',
+                  wrappers: [RouteWatcher],
                 },
               ],
             },
@@ -104,18 +110,21 @@ export default defineConfig({
                   icon: 'smile',
                   path: '/form/basic-form',
                   component: './form/basic-form',
+                  wrappers: [RouteWatcher],
                 },
                 {
                   name: 'step-form',
                   icon: 'smile',
                   path: '/form/step-form',
                   component: './form/step-form',
+                  wrappers: [RouteWatcher],
                 },
                 {
                   name: 'advanced-form',
                   icon: 'smile',
                   path: '/form/advanced-form',
                   component: './form/advanced-form',
+                  wrappers: [RouteWatcher],
                 },
               ],
             },
@@ -132,24 +141,28 @@ export default defineConfig({
                     {
                       path: '/list/search',
                       redirect: '/list/search/articles',
+                      wrappers: [RouteWatcher],
                     },
                     {
                       name: 'articles',
                       icon: 'smile',
                       path: '/list/search/articles',
                       component: './list/search/articles',
+                      wrappers: [RouteWatcher],
                     },
                     {
                       name: 'projects',
                       icon: 'smile',
                       path: '/list/search/projects',
                       component: './list/search/projects',
+                      wrappers: [RouteWatcher],
                     },
                     {
                       name: 'applications',
                       icon: 'smile',
                       path: '/list/search/applications',
                       component: './list/search/applications',
+                      wrappers: [RouteWatcher],
                     },
                   ],
                 },

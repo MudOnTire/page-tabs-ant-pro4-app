@@ -84,7 +84,7 @@
     "umi": "^3.2.0",
     "umi-request": "^1.0.8",
     "use-merge-value": "^1.0.1",
-    "antd-pro-page-tabs": "link:.."
+    "antd-pro-page-tabs": "0.2.3"
   },
   "devDependencies": {
     "@ant-design/pro-cli": "^1.0.18",
